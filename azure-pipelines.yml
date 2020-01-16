@@ -27,3 +27,4 @@ steps:
     organization: 'vego1mar-all'
     scannerMode: 'Other'
     
+- task: SonarCloudAnalyze@1
