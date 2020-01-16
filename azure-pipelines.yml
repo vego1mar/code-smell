@@ -20,3 +20,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'code-smell-analysis-azure'
+    organization: 'vego1mar-all'
+    scannerMode: 'Other'
+    
