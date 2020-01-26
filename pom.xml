@@ -14,7 +14,7 @@
 	  	<sonar.organization>vego1mar-all</sonar.organization>
 	  	<sonar.projectKey>code-smell-analysis</sonar.projectKey>
         <sonar.java.libraries>target</sonar.java.libraries>
-        <sonar.java.binaries>build/classes</sonar.java.binaries>
+        <sonar.java.binaries>target</sonar.java.binaries>
 	</properties>
 
     <dependencies>
