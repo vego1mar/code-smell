@@ -26,11 +26,14 @@ steps:
     SonarCloud: 'code-smell-analysis-azure'
     organization: 'vego1mar-all'
     scannerMode: 'Other'
-    
+
+- task: SonarCloudAnalyze@1
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
